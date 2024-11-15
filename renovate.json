@@ -5,6 +5,12 @@
       ":dependencyDashboard"
     ],
     "forkProcessing": "enabled",
+    "kustomize": {
+      "fileMatch": [
+        "(^|/)kustomization\\.ya?ml$",
+        "(^|/)([a-zA-Z]+-)+chart\\.ya?ml$"
+        ]
+    },
     "packageRules": [
       {
         "matchPackageNames": [
