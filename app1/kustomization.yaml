@@ -1,0 +1,7 @@
+helmCharts:
+  - name: traefik
+    namespace: traefik
+    releaseName: traefik
+    repo: https://helm.traefik.io/traefik
+    valuesFile: values.yaml
+    version: 30.0.1
