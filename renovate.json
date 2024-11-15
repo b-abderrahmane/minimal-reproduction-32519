@@ -1,1 +1,23 @@
-{}
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+      "config:base",
+      ":separateMultipleMajorReleases",
+      ":ignoreUnstable",
+      ":enableVulnerabilityAlertsWithLabel(security)",
+      "helpers:pinGitHubActionDigests",
+      ":dependencyDashboard"
+    ],
+    "osvVulnerabilityAlerts": true,
+    "timezone": "Europe/Amsterdam",
+    "rebaseWhen": "never",
+    "additionalBranchPrefix": "{{manager}}-{{prettyDepType}}-{{packageFileDir}}-",
+    "packageRules": [
+      {
+        "groupName": "all {{prettyDepType}} dependencies under {{packageFileDir}}",
+        "matchPackageNames": [
+          "*"
+        ]
+      }
+    ]
+  }
