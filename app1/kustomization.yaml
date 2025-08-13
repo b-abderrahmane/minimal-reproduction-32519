@@ -3,7 +3,7 @@ helmCharts:
     namespace: traefik
     releaseName: traefik
     repo: https://helm.traefik.io/traefik
-    version: 30.0.1
+    version: 30.1.0
 
 generators:
   - argocd-chart.yaml
